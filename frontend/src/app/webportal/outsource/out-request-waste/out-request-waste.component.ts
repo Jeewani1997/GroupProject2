@@ -145,7 +145,8 @@ export class OutRequestWasteComponent implements OnInit {
 
          public updateBox(wasteType: string){
             this.outsourceWasteRequsetService
-                .alert('Waste Category  Availabale','Waste Category '+wasteType+'  in stock.');
+                .alert('Added Sucessfully','Waste request '+''+'  add.');
+               // this.pageRefresh();
 
  }
         // public updatesucessBox(){

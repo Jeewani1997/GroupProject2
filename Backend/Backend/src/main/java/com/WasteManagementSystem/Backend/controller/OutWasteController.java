@@ -122,5 +122,10 @@ public class OutWasteController {
 		public @ResponseBody List<String> getOutWStatus() {
 		    return outsourceWasteRequestRepo.getOutWStatus();
 		}
+	 
+	 @GetMapping(path="/report/{{year}}/{{month}}")
+		public List<OutsourceWasteRequest> getreport(@PathVariable int year,@PathVariable int month) {
+		    return service.getReport(year,month);
+		}
 
 }

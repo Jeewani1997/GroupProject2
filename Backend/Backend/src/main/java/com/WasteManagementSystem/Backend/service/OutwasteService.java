@@ -35,6 +35,10 @@ public  class OutwasteService {
 	public List<OutsourceWasteRequest> fetchUserByStatusCon() {
 		return repo.findstatusCon();
 	}
+	
+	public List<OutsourceWasteRequest> getReport(int year,int month) {
+		return repo.findReport(year,month);
+	}
 //	public List<OutsourceWasteRequest> fetchUserById(int id) {
 //		return repo.findById(id);
 //	}

@@ -6,6 +6,7 @@ import com.WasteManagementSystem.Backend.entity.OutsourceWasteRequest;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 
@@ -24,5 +25,11 @@ public interface OutsourceWasteRequestRepository extends JpaRepository<Outsource
 	
 	@Query("select owr.status from OutsourceWasteRequest owr where owr.status='pending'")
 	List<String> getOutWStatus();
+	
+//	@Query("select owr.status from OutsourceWasteRequest owr where owr.status='pending'")
+//	List<String> findReport();
+	
+	@Query(value = "select * from  outsource_waste_request where outsource_waste_request.year= :year and outsource_waste_request.month= :month and outsource_waste_request.status='Pending'", nativeQuery = true)
+	  public List<OutsourceWasteRequest> findReport(@Param("year")int year, @Param("month")int month);
 	
 }

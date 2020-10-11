@@ -40,6 +40,8 @@ import { ContactComponent } from '../../outsource/contact/contact.component';
 import { EventComponent } from '../../outsource/event/event.component';
 import { FeedbackComponent } from '../../outsource/feedback/feedback.component';
 import { TermsconComponent } from '../../outsource/termscon/termscon.component';
+import { ReportsComponent } from '../../outsource/reports/reports.component';
+import { WasterequestComponent } from '../../outsource/reports/wasterequest/wasterequest.component';
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import { TermsconComponent } from '../../outsource/termscon/termscon.component';
     EventComponent,
     FeedbackComponent,
     TermsconComponent,
+    ReportsComponent,
+    WasterequestComponent,
     // WelcomeComponent,
     // ShopComponent,
     // CustomerLoginComponent,

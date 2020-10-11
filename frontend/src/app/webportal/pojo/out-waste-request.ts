@@ -7,6 +7,8 @@ export class OutWasteRequest {
     customer: string;
     email: string;
     status: string;
+    year:number;
+    month:number;
 
     constructor(){}
 }

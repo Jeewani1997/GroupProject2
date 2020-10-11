@@ -82,6 +82,8 @@ import { ContactComponent } from './webportal/outsource/contact/contact.componen
 import { EventComponent } from './webportal/outsource/event/event.component';
 import { FeedbackComponent } from './webportal/outsource/feedback/feedback.component';
 import { TermsconComponent } from './webportal/outsource/termscon/termscon.component';
+import { ReportsComponent } from './webportal/outsource/reports/reports.component';
+import { WasterequestComponent } from './webportal/outsource/reports/wasterequest/wasterequest.component';
 
 
 const routes: Routes = [
@@ -240,6 +242,14 @@ const routes: Routes = [
       {
         path:'term',
         component:TermsconComponent,
+      },
+      {
+        path:'report',
+        component:ReportsComponent,
+      },
+      {
+        path:'wastereport/:year/:month',
+        component:WasterequestComponent,
       }
     ],
   },
